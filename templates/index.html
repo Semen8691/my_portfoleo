@@ -1,0 +1,137 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/sm.css' %}">
+    <link rel="stylesheet" href="">
+</head>
+<body>
+<section>
+    <nav>
+        <div class="logo">
+            <a href="/">Portfolio</a>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="#"><u>Home</u></a></li>
+                <li><a href="#projects"><u>Projects</u></a></li>
+                <li><a href="#contact"><u>Contact</u></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="home">
+        <div class="overlay">
+            <div class="blur-area">
+                <div class="content-area">
+                    <div class="container">
+                        <div class="left">
+                            <div class="text-area">
+                                Hello I'm Bot.
+                                <br>
+                                Hello I'm Bot.
+                            </div>
+                            <div class="wrapper">
+                                <a href="#">
+                                    <div class="icon facebook">
+                                        <div class="tooltip">Facebook</div>
+                                        <span><i class="fab fa-facebook-f"></i></span>
+                                    </div>
+                                </a>
+                                <div class="icon twitter">
+                                    <div class="tooltip">Twitter</div>
+                                    <span><i class="fab fa-twitter"></i></span>
+                                </div>
+                                <div class="icon instagram">
+                                    <div class="tooltip">Instagram</div>
+                                    <span><i class="fab fa-instagram"></i></span>
+                                </div>
+                                <div class="icon github">
+                                    <div class="tooltip">Github</div>
+                                    <span><i class="fab fa-github"></i></span>
+                                </div>
+                                <div class="icon youtube">
+                                    <div class="tooltip">Youtube</div>
+                                    <span><i class="fab fa-youtube"></i></span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<a href="" id="projects"></a>
+<section>
+    <div class="home2">
+        <div class="content-area" id="prtf">
+            <div class="title">
+                <h1>My projects</h1>
+            </div>
+            <div class="credit">
+
+
+                <div class="progect1">
+                    <ul class="cardtext">
+                        <li><a href="#"><u>testrepository</u></a></li>
+                    </ul>
+                </div>
+
+
+                <div class='progect2'>
+                    <ul class="cardtext">
+                        <li><a href="#"><u>morskoy_boy-</u></a></li>
+                    </ul>
+                </div>
+                <div class='tmp'>
+
+                </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<a href="" id="contact">  </a>
+<section>
+    <div class="home3">
+        <form method="post"  class="content-form">
+            {% csrf_token %}
+            <div class="title">
+                <h1> Contact</h1>
+
+            </div>
+            <div class="forma">
+                <label>
+                    <input type="text" placeholder="Name" class="input-field-control" name="name">
+                </label>
+            </div>
+            <div class="forma">
+                <label>
+                    <input type="number" placeholder="Phone" class="input-field-control" name="phone">
+                </label>
+            </div>
+
+            <div class="butten">
+                <label>
+                    <input type="submit" placeholder="GO" class="input-field-control">
+                </label>
+            </div>
+
+        </form>
+    </div>
+</section>
+</body>
+</html>
